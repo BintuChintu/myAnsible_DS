@@ -3,4 +3,4 @@
   become: yes
   tasks:
   - name: I want to execute linux commands
-    commands: hostname -f
+    command: hostname -f
