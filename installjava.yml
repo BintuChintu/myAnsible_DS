@@ -1,0 +1,15 @@
+---
+- hosts: mywebservers
+  become: yes
+  gather_facts: yes
+  tasks:
+  - name: Install java on ubuntu node
+    apt:
+      name: openjdk-8-jre
+      state: present
+    when: ansible_os_family == "Debian"    
+  - name: Install java on redhat node
+    yum:
+      name: java-1.8.0-openjdk
+      state: present
+    when: ansible_os_family == "RedHat"   
