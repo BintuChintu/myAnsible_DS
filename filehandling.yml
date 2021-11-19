@@ -1,0 +1,8 @@
+---
+- hosts: 172.31.21.192
+  become: yes
+  tasks:
+  - name: I want to handle file
+    file:
+      path: /homee/ubuntu/myubuntufile
+      state: touch
