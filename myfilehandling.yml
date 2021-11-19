@@ -14,5 +14,5 @@
       state: present
   - name: I want to copy indexfile into node side
     template:
-      src: index.j2
+      src: myindex.j2
       dest: /var/www/html/index.html      
