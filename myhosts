@@ -16,9 +16,3 @@
 
 [myreadhatservers]
 172.31.1.230
-
-
-[mywebservers:vars]
-key=value
-mywebpackubuntu = apache2
-mywebpackredhat = httpd 
