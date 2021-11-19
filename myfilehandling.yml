@@ -7,3 +7,8 @@
       path: /home/ubuntu/myubuntufile
       state: touch
   - include_tasks: myfile.yml    
+
+  - name : I want to instal webserver
+    apt:
+      name: apache2
+      state: present
