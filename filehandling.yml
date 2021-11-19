@@ -4,5 +4,5 @@
   tasks:
   - name: I want to handle file
     file:
-      path: /homee/ubuntu/myubuntufile
+      path: /home/ubuntu/myubuntufile
       state: touch
