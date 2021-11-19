@@ -1,0 +1,13 @@
+---
+- hosts: 172.31.21.192
+  become: yes
+  vars:
+    myvar1: git
+    myvar2: tree
+  tasks:
+  - name: I want to dispaly myvar1
+    debug:
+      msg: "{{myvar1}}"
+  - name: I want to dispaly myvar2 
+    debug:
+      msg: "{{myvar2}}"
