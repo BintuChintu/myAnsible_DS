@@ -1,0 +1,10 @@
+---
+
+- name: I want to create folder
+  file:
+      path: /home/ubuntu/myfolder
+      state: mkdir
+- name: I want to create a file
+  file:
+      path: /home/ubuntu/myfolder/myfileone
+      state: mkdir      
