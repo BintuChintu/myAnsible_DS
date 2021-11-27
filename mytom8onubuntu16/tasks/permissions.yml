@@ -7,7 +7,7 @@
     state: directory
 - name: Give the tomcat read access to the conf directory  
   file:
-    path: /opt/tomcat/cnf
+    path: /opt/tomcat/conf
     recurse: yes
     mode: g+r
     state: directory
